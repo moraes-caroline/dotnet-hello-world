@@ -20,7 +20,7 @@ jobs:
 
       - name: Restaurar dependências
         run: dotnet restore
-        working-directory: ../dotnet/dotnet-hello-world.sln
+        working-directory: dotnet/dotnet-hello-world.sln
 
       - name: Compilar aplicação
         run: dotnet build --configuration Release --no-restore
