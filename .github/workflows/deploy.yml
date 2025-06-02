@@ -28,6 +28,7 @@ jobs:
 
       - name: Publicar aplicação
         run: dotnet publish -c Release -o ./publish
+        working-directory: dotnet
 
       - name: Login no Docker Hub
         uses: docker/login-action@v3
