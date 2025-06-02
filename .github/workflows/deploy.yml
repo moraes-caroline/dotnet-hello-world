@@ -24,6 +24,7 @@ jobs:
 
       - name: Compilar aplicação
         run: dotnet build --configuration Release --no-restore
+        working-directory: dotnet
 
       - name: Publicar aplicação
         run: dotnet publish -c Release -o ./publish
